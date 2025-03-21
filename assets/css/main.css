@@ -4148,3 +4148,9 @@ body.is-mobile.landing #footer {
 #three .inner .icon {
   width: 100% !important;
 }
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
