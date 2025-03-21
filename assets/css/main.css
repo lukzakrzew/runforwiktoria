@@ -2909,7 +2909,7 @@ ul {
 
 .wrapper.style1 {
   /* background-color: #21b2a6; */
-  background-color: #c458a0;
+  background-color: #2e3842;
   color: #c8ece9;
 }
 
@@ -3079,8 +3079,8 @@ ul {
 }
 
 .wrapper.style3 {
-  /* background-color: #505393; */
-  background-color: #c458a0;
+  background-color: #505393;
+  /* background-color: #c458a0; */
   color: #d3d4e4;
 }
 
@@ -4150,7 +4150,49 @@ body.is-mobile.landing #footer {
 }
 
 .circle {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: block;
   width: 150px;
   height: 150px;
   border-radius: 50%;
+}
+
+.buttons-top {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.buttons-top a {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 130px;
+}
+
+#banner .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-icons {
+  margin-top: 20px;
+}
+.contact-icons a {
+  font-size: 21px;
+}
+
+#header ul.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.her-story,
+.her-story .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
 }
