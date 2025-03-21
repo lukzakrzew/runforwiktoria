@@ -3080,7 +3080,6 @@ ul {
 
 .wrapper.style3 {
   background-color: #505393;
-  /* background-color: #c458a0; */
   color: #d3d4e4;
 }
 
@@ -4128,20 +4127,13 @@ body.is-mobile.landing #footer {
   background-color: #1d242a;
 }
 
-#one .inner {
-  padding: 50px;
-  max-width: 900px !important;
-  border: 1px solid #aaa;
-}
-
 #three .inner {
   max-width: inherit !important;
-  border: 1px solid #aaa;
   padding-top: 0px !important;
 }
 
 #three .inner .gallery img {
-  max-width: 90%;
+  max-width: 100%;
   margin-bottom: 30px;
 }
 
@@ -4169,7 +4161,7 @@ body.is-mobile.landing #footer {
 .buttons-top a {
   padding-left: 10px;
   padding-right: 10px;
-  width: 130px;
+  width: 140px;
 }
 
 #banner .inner {
@@ -4183,11 +4175,6 @@ body.is-mobile.landing #footer {
 }
 .contact-icons a {
   font-size: 21px;
-}
-
-#header ul.icons {
-  display: flex;
-  justify-content: center;
 }
 
 .her-story,
