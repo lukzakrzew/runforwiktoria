@@ -97,7 +97,11 @@
           </div>
         </section>
 	<section class="spotlight">
-          <div class="image"><img src="images/wiktoria5.jpg" alt="" /></div>
+          <div class="image slides">
+              <img src="images/slide1/3s.jpg" class="active"alt="" />
+              <img src="images/slide1/4s.jpg" alt="" />
+              <img src="images/slide1/5s.jpg" alt="" />
+          </div>
           <div class="content">
             <h2>
               🎗️ <strong>Behind Her Smile – A Battle Fought Every Day</strong>
@@ -116,7 +120,12 @@
         </section>
         <!-- na górze są nowe -->
         <section class="spotlight">
-          <div class="image"><img src="images/wiktoria5.jpg" alt="" /></div>
+          <div class="image slides">
+            <img src="images/slide2/1s.jpg" class="active"alt="" />
+            <img src="images/slide2/2s.jpg" alt="" />
+            <img src="images/slide2/3s.jpg" alt="" />
+            <img src="images/slide2/5s.jpg" alt="" />
+        </div>
           <div class="content">
             <h2>
               🌸 <strong>Wiktoria is a joyful and bright little girl</strong>
@@ -156,23 +165,6 @@
 	    </p>  
           </div>
         </section>
-<!--         <section class="spotlight">
-          <div class="image"><img src="images/wiktoria4.jpg" alt="" /></div>
-          <div class="content">
-            <h3>
-              The costs are overwhelming for her parents.
-              Your support will give Wiktoria a chance for a better, more independent future.
-            </h3>
-          </div>
-        </section>
-        <section class="spotlight">
-          <div class="image"><img src="images/wiktoria3.png" alt="" /></div>
-          <div class="content">
-            <h3>
-              Join us in helping her take her first steps!
-            </h3>
-          </div>
-        </section> -->
       </section>
 
       <!-- Three -->
@@ -243,26 +235,11 @@
               </h3>
               </p>
             </li>
-            <!-- <li class="icon solid fa-heart">
-              <h3>Podziękowania dla Rosti</h3>
-              <p>
-                żeby potencjalni Sponsorzy czuli że będą docenieni mozna tez dodac logo
-              </p>
-            </li> -->
           </ul>
 					<div class="gallery">
-<!-- 						<a href="images/bieg1.jpg" data-lightbox="mygallery" data-title="Photo 1">
-								<img src="images/bieg1mini.jpg" alt="Photo 1">
-						</a> -->
-<!-- 						<a href="images/bieg2.jpg" data-lightbox="mygallery" data-title="Photo 2">
-								<img src="images/bieg2mini.jpg" alt="Photo 2">
-						</a> -->
 						<a href="images/bieg3.jpg" data-lightbox="mygallery" data-title="Photo 3">
 							<img src="images/bieg3mini.jpg" alt="Photo 3">
 					  </a>
-<!--             <a href="images/bieg5.jpg" data-lightbox="mygallery" data-title="Photo 4">
-                <img src="images/bieg5mini.jpg" alt="Photo 3">
-            </a> -->
 				</div>
           
         </div>
@@ -302,5 +279,21 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+      const collection = document.querySelectorAll('.slides');
+      for (let i = 0; i < collection.length; i++) {
+        const slides = collection[i].querySelectorAll('img');
+        let currentIndex = 0;
+    
+        function showNextSlide() {
+          slides[currentIndex].classList.remove('active');
+          currentIndex = (currentIndex + 1) % slides.length;
+          slides[currentIndex].classList.add('active');
+        }
+    
+        setInterval(showNextSlide, 5000);
+      }
+    </script>
   </body>
 </html>

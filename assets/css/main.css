@@ -4183,3 +4183,12 @@ body.is-mobile.landing #footer {
   flex-direction: column;
   align-items: center !important;
 }
+
+.slides img {
+  width: 0 !important;
+}
+
+.slides img.active {
+  width: 100% !important;
+  height: auto;
+}
