@@ -4137,10 +4137,6 @@ body.is-mobile.landing #footer {
   margin-bottom: 30px;
 }
 
-#three .inner .icon {
-  width: 100% !important;
-}
-
 .circle {
   margin-top: 30px;
   margin-bottom: 20px;
@@ -4161,7 +4157,7 @@ body.is-mobile.landing #footer {
 .buttons-top a {
   padding-left: 10px;
   padding-right: 10px;
-  width: 140px;
+  width: 160px;
 }
 
 #banner .inner {
@@ -4191,4 +4187,41 @@ body.is-mobile.landing #footer {
 .slides img.active {
   width: 100% !important;
   height: auto;
+}
+
+.siepomaga-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 66px;
+  color: #fff;
+  width: 420px;
+}
+
+.c-payPalDonateForm {
+  display: inline;
+}
+
+.c-payPalDonateForm button {
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 420px;
+}
+
+.c-payPalDonateForm button .icon {
+  font-size: 40px;
+}
+
+#three button {
+  margin-top: 30px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
