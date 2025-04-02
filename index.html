@@ -29,7 +29,7 @@
           <ul class="icons" style="visibility: visible;">
             <li>
               <a href="https://www.siepomaga.pl/wiktoria-sawicka" class="icon solid fa-heart"
-                ><span class="label" style="display: inline;">Donate</span></a
+                ><span class="label" style="display: inline;" data-i18n="donate">Donate</span></a
               >
             </li>
           </ul>
@@ -277,31 +277,43 @@
                 Share Wiktoria’s story with your friends and family. Every share increases her chances of getting the help she needs! 
               </p>
 	    </li>
-            <li class="icon solid fa-heart">
-              <h3 data-i18n="help-section5-header">Corporate Sponsorship</h3>
-              <p>
-                <spn data-i18n="help-section5-text1">
-                Companies and organizations can support Wiktoria by becoming 
-                an Honorary Patron of the "Run for Wiktoria" initiative. 
-                <br><br>
-                Sponsors will be featured on our website and social medias as a sign of gratitude for their generosity.
-                <br><br>
-                If your company is interested in becoming sponsor, 
-                please contact us.
-              </spn>
-                <br/><br/>
-                <h3>
-                  <span data-i18n="help-section5-text2">📩 Get in touch </span>
-                  <a href="mailto:runforwiktoria@gmail.com">runforwiktoria@gmail.com</a>
-              </h3>
-              </p>
-            </li>
+      <li class="icon solid fa-heart">
+        <h3 data-i18n="help-section5-header">Corporate Sponsorship</h3>
+        <p>
+          <spn data-i18n="help-section5-text1">
+          Companies and organizations can support Wiktoria by becoming 
+          an Honorary Patron of the "Run for Wiktoria" initiative. 
+          <br><br>
+          Sponsors will be featured on our website and social medias as a sign of gratitude for their generosity.
+          <br><br>
+          If your company is interested in becoming sponsor, 
+          please contact us.
+        </spn>
+          <br/><br/>
+          <h3>
+            <span data-i18n="help-section5-text2">📩 Get in touch </span>
+            <a href="mailto:runforwiktoria@gmail.com">runforwiktoria@gmail.com</a>
+        </h3>
+        </p>
+      </li>
+      <li class="icon solid fa-heart">
+        <h3 data-i18n="help-section6-header"></h3>
+        <p style="width: 100%">
+          <spn data-i18n="help-section6-text1">
+            
+          </spn>
+          <br/><br/>
+          <div class="center">
+							<img src="images/rosti-logo-file.svg" alt="Photo 3">
+				  </div>
+        </p>
+      </li>
           </ul>
 					<div class="gallery">
 						<a href="images/bieg3.jpg" data-lightbox="mygallery" data-title="Photo 3">
 							<img src="images/bieg3mini.jpg" alt="Photo 3">
 					  </a>
-				</div>
+				  </div>
           
         </div>
       </section>
@@ -343,6 +355,7 @@
 
     <script>
       const eng = {
+        donate: " Donate",
         header: "Run for Wiktoria",
         subheader1: "Help Wiktoria Take Her First Step!",
         button1: "Her story",
@@ -409,9 +422,12 @@
         "help-section5-text1":
           'Companies and organizations can support Wiktoria by becoming an Honorary Patron of the "Run for Wiktoria" initiative. <br><br> Sponsors will be featured on our website and social medias as a sign of gratitude for their generosity. <br><br> If your company is interested in becoming sponsor, please contact us.',
         "help-section5-text2": "📩 Get in touch",
+        "help-section6-header": "header",
+        "help-section6-text1": 'aaaaaaaaaa bbbbbbbbbbbb cccccccccc aaaaaaaaaa bbbbbbbbbbbb cccccccccc aaaaaaaaaa bbbbbbbbbbbb cccccccccc aaaaaaaaaa bbbbbbbbbbbb cccccccccc'
       };
 
       const pl = {
+        donate: ' Link do zbiórki',
         header: "Biegnę dla Wiktorii",
         subheader1: "Pomóż Wiktorii postawić pierwszy krok!",
         button1: "Jej historia",
@@ -478,6 +494,8 @@
         "help-section5-text1":
           'Firmy i organizacje mogą wesprzeć Wiktorię, zostając Honorowym Patronem inicjatywy "Biegnę dla Wiktorii". <br><br> Sponsorzy zostaną wyróżnieni na naszej stronie internetowej oraz w mediach społecznościowych jako znak wdzięczności za ich hojność. <br><br> Jeśli Twoja firma jest zainteresowana wsparciem, skontaktuj się z nami.',
         "help-section5-text2": "📩 Skontaktuj się",
+        "help-section6-header": "header",
+        "help-section6-text1": 'aaaaaaaaaa bbbbbbbbbbbb cccccccccc aaaaaaaaaa bbbbbbbbbbbb cccccccccc aaaaaaaaaa bbbbbbbbbbbb cccccccccc aaaaaaaaaa bbbbbbbbbbbb cccccccccc'
       };
       const translations = navigator.language.includes('pl')
         ? pl
